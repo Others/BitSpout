@@ -1,6 +1,8 @@
-package spout.inject
+package spout_old.inject
 
 trait HashManager {
+    def hashNumber:Byte
+  
     def stripHash(bytes:Seq[Byte]):(Seq[Byte], Seq[Byte])
     
     def stripTypeAndHash(bytes:Seq[Byte]):(Seq[Byte], Seq[Byte])={

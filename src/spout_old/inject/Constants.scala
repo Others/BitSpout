@@ -1,8 +1,8 @@
-package spout.inject
+package spout_old.inject
 
 object Constants {
     //Infrastructure
-    val SERVER_PORT:Char=53735
+    val SERVER_PORT:Char=8001
     val CLIENT_PORT:Char=53736
     
     //Server Message Codes

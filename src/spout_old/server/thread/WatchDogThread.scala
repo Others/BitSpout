@@ -1,4 +1,4 @@
-package spout.server.thread
+package spout_old.server.thread
 
 import scala.collection.mutable
 import scala.collection.concurrent

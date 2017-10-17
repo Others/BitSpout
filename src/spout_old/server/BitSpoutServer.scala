@@ -1,9 +1,9 @@
-package spout.server
+package spout_old.server
 
-import spout.inject.HashManager
-import spout.inject.RemoteListener
-import spout.server.thread.WatchDogThread
-import spout.server.thread.ControllerThread
+import spout_old.inject.HashManager
+import spout_old.inject.RemoteListener
+import spout_old.server.thread.WatchDogThread
+import spout_old.server.thread.ControllerThread
 import scala.collection.concurrent.TrieMap
 import scala.collection.mutable
 import java.util.Timer

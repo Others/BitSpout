@@ -1,11 +1,12 @@
-package spout.client.thread
+package spout_old.client.thread
 
+import scala.collection.concurrent
 import scala.concurrent.Channel
 
-import spout.client.TargetFile
-import spout.inject.HashManager
+import spout_old.client.TargetFile
+import spout_old.inject.HashManager
 
-class DecrypterThread[T](packets:Channel[Seq[Byte]], files:Map[(Byte, Seq[Byte]), TargetFile[T]], hashManagers:Map[Byte, HashManager]) extends Runnable{
+class DecrypterThread[T](packets:Channel[Seq[Byte]], files:concurrent.Map[(Byte, Seq[Byte]), TargetFile[T]], hashManagers:Map[Byte, HashManager]) extends Runnable{
     def run()={
          while(true){
              val newPacket=packets.read

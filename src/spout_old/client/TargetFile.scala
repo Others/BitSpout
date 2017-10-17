@@ -1,8 +1,8 @@
-package spout.client
+package spout_old.client
 
 import scala.collection.mutable
-import spout.inject.Constants._
-import spout.inject.{RemoteCommand, PacketHandler, PacketManager}
+import spout_old.inject.Constants._
+import spout_old.inject.{RemoteCommand, PacketHandler, PacketManager}
 
 
 

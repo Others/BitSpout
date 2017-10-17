@@ -1,15 +1,15 @@
-package spout.client.thread
+package spout_old.client.thread
 
 import scala.collection.mutable
 import scala.io.Source
 
 import java.nio.file.{FileSystems, Files}
 
-import spout.client.TargetFile
-import spout.inject.RemoteCommand
-import spout.inject.PacketManager
-import spout.inject.HashManager
-import spout.inject.Constants._
+import spout_old.client.TargetFile
+import spout_old.inject.RemoteCommand
+import spout_old.inject.PacketManager
+import spout_old.inject.HashManager
+import spout_old.inject.Constants._
 
 class UserThread[T](commands:Iterator[String], files:mutable.Map[(Byte, Seq[Byte]), TargetFile[T]], controller:RemoteCommand[T], packetManager:PacketManager, hashManagers:Map[Byte, HashManager]) extends Runnable{
     def run()={
